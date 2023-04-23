@@ -10,10 +10,7 @@ def before_refactor():
 
     mushrooms = [Mushroom('Portabello', False), Mushroom('Oyster', False),
                  Mushroom('Death Cap', True)]
-    i = 0
-
-    for mushroom in mushrooms:
-        i += 1
+    for i, mushroom in enumerate(mushrooms, start=1):
         name = mushroom.name
         print('%d:"%s"' % (i, name))
 
